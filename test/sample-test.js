@@ -7,7 +7,7 @@ const ETHERS = 10**18;
 const GAS_PRICE = 10**6;
 
 let fundingContract = null;
-
+ 
   it("should check the owner is valid", async () => {
     fundingContract = await Funding.deployed();
     const owner = await fundingContract.owner.call()
